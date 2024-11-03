@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>n8n Chat Widget</title>
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Container for Chat Widget -->
+  <div id="chat-widget"></div>
+
+  <!-- Script to initialize the chat widget -->
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+      webhookUrl: 'https://prakaash.app.n8n.cloud/webhook' // Replace with your actual n8n webhook URL if different
+    });
+  </script>
+
+</body>
+</html>
